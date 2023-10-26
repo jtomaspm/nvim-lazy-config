@@ -13,6 +13,9 @@ return {
                 go = {
                     formatters.shell({ cmd = { "gofmt" } }),
                 },
+                cpp = {
+                    formatters.shell({ cmd = { "clang-format" } }),
+                },
             }
         })
     end,
